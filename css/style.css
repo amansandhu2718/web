@@ -6,7 +6,9 @@
 body{
     overflow: hidden;
 }
-
+#navbarNavAltMarkup{
+    margin-right:10vw;
+}
 
 .adjust1{
    display: flex;
@@ -26,29 +28,36 @@ body{
     position: relative;
     z-index: 100;
     margin-left:10px ;
-    padding: 20px;
+    padding: 15px;
     width: 20vw;
-    height: 35px;
+    height: 45px;
     border-radius: 25px;
     outline: none;
     transition: 0.3s;
+    box-shadow: none;
+    border: 2px solid #F6F6F6;
 }
 
 form .searchbar:focus{
-    border: 2px solid #81BC40;
+   border: 2px solid #81BC40; 
 }
 .searchbutton{
   transition: 0.3s;
-    width: 8vw;
+    width: 200px;
     height: 45px;
     background-color: #ffb813;
     border-radius: 28px;
     background: #ffb813;
+    border: 2px solid #ffb813;
   
 }
 
 .container1{
-    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vh;
+    margin-top: 10px;
     width: 100%;
     background-color: #F6F6F6;
     overflow: hidden;
@@ -62,9 +71,23 @@ form .searchbar:focus{
     bottom: 0px;
 
 }
+.section111{
+width: 80%;
 
-
-
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.section11button{
+    transition: 0.3s;
+    width: 200px;
+    height: 45px;
+    background-color: #81BC40;
+    border-radius: 28px;
+    background: #81BC40;
+    border: 2px solid #81BC40;
+  
+}
 
 
 @media screen and ( max-width: 1600px){
@@ -76,7 +99,7 @@ form .searchbar:focus{
     .searchbar{
         margin-left:10px ;
         width: 30vw;
-        height: 35px;
+        height: 20px;
     }
     .searchbutton{
         width: 6vw;
@@ -132,7 +155,7 @@ form .searchbar:focus{
     }
     .searchbutton{
         width: 12vw;
-        height: 30px;
+        height: 42px;
     }
 }
 @media screen and ( max-width: 687px){
@@ -145,13 +168,13 @@ form .searchbar:focus{
         min-width:350px ;
     }
     .searchbar{
-        margin-left:10px ;
+        margin-left:12px ;
         width: 40vw;
-        height: 30px;
+        height: 35px;
     }
     .searchbutton{
         width: 15vw;
-        height: 30px;
+        height: 35px;
     }
 }
 @media screen and (max-width : 540px){
@@ -166,15 +189,14 @@ form .searchbar:focus{
     .searchbar{
         margin-left:10px ;
         width: 65vw;
-        height: 30px;
+        height: 35px;
     }
     form .searchbar:focus{
-        border: 3px solid #81BC40;
-        padding: 18px;
+        border: 2px solid #81BC40; 
     }
     .searchbutton{
         width: 15vw;
-        height: 40px;
+        height: 35px;
     }
 }
 @media screen and ( max-width: 450px){
@@ -191,7 +213,7 @@ form .searchbar:focus{
         margin-left:0px ;
         width: 95vw;
         height: 35px;
-        padding: 5px;
+        padding: 2px;
         text-indent: 5px;
         border-radius: 25px;
     }
@@ -201,8 +223,8 @@ form .searchbar:focus{
         left:50%;
         transform: translateX(-50%);
         margin-top: 10px;
-        width:40vw;
-        height: 30px;
+        width:200px;
+        height: 35px;
        
     }
     .searchbar input::placeholder{
