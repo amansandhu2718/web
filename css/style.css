@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    overflow: hidden;
+}
 
 
 .adjust1{
@@ -48,6 +51,7 @@ form .searchbar:focus{
     margin-top: 30px;
     width: 100%;
     background-color: #F6F6F6;
+    overflow: hidden;
    
 }
 
