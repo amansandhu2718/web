@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    overflow: hidden;
+    overflow-X: hidden;
 }
 #navbarNavAltMarkup{
     margin-right:10vw;
@@ -56,10 +56,21 @@ form .searchbar:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 45vh;
+    min-height: 40vh;
     margin-top: 10px;
     width: 100%;
     background-color: #F6F6F6;
+    overflow: hidden;
+   
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+    margin-top: 10px;
+    width: 100%;
+  
     overflow: hidden;
    
 }
@@ -69,6 +80,7 @@ form .searchbar:focus{
     height:auto;
     width: 100%;
     bottom: 0px;
+
 
 }
 .section111{
@@ -89,7 +101,14 @@ justify-content: center;
   
 }
 
+.section2{
+    position: relative;
+    height:auto;
+    width: 30%;
+    bottom: 0px;
 
+
+}
 @media screen and ( max-width: 1600px){
     .searchheading{
         font-size: 2.5vw;
