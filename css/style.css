@@ -127,6 +127,9 @@ justify-content: center;}
     width: 100%;
     height: auto;
     padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .options{
     width: 99%;
@@ -157,8 +160,107 @@ justify-content: center;
     right: 5px;
 }
 
+.userbuttons{
+    background-color: #8D8D8D; 
+    border-radius: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainbuttons{
+    width: 200px;
+    height: 42px;
+    background-color: #DDDDDD;
+    border-radius: 28px;
+  margin: 5px;
+    border: 0px solid #81BC40;
+}
+.options2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logoutbutton{
+    width: 80px;
+    height: 30px;
+margin-bottom: 5px;
+margin-right: 5px;
+}
+.topcontainer{
+    padding: 20px;
+}
+.topproductsarea{
+    width: 100%;
+    height: 5vh;
+    background-color: gray;
+    margin-bottom: 2px;
+}
 
-
+.productsarea{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(241, 241, 241);
+}
+.mycard{
+    width: 300px;
+    min-width: 200px;
+    height: 350px;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0px;
+}
+.cardinner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    line-height:5px;
+    transition: all 0.4s;
+}
+.cardinner:hover img{
+transform: scale(1.8);
+transition: all 0.4s;
+}
+.cardinner:hover button{
+    background-color: #FFB813;
+    transition: all 0.4s;
+    }
+.productimg{
+ width: 100%;
+    height: auto ;  
+    margin-bottom: 10px;  
+  
+    
+}
+.price{
+    margin-top:10px ;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy{
+    width: 100%;
+    background-color: #acacac;
+    height: 42px;
+    border: 0px;
+    position: relative;
+    bottom: 0px;
+    transition: all 0.4s;
+}
 
 @media screen and ( max-width: 1600px){
     .searchheading{
@@ -186,7 +288,14 @@ justify-content: center;
     .searchbutton{
         width: 10vw;
         height: 40px;}
-}
+       
+        .mainbuttons{
+            width: 200px;
+            height: 38px;
+           
+        }
+        
+    }
 @media screen and ( max-width: 1024px){
     .searchheading{
         font-size: 3vw;
@@ -215,11 +324,22 @@ justify-content: center;
     .searchbutton{
         width: 12vw;
         height: 42px;}
-        .userdatatop{
-           
-            right: 0px;
-        }
+    .userdatatop{right: 0px;}
+    .userbuttons{
+        background-color: #8D8D8D; 
+        border-radius: 5px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        position: relative;
+        top: 10px;
     }
+    
+        
+}
 @media screen and ( max-width: 687px){
     .searchheading{
         font-size: 4vw;
@@ -282,8 +402,19 @@ justify-content: center;
   padding: 5px;
         text-indent: 5px;}
 }
+@media screen and ( max-width: 378px){
+    
+    
+}
 
 @media screen and ( max-width: 350px){
+    .logoutbutton{
+        width: 65px;
+        height: 38px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    }
+    
 }
 
 @media screen and ( max-width: 321px){
