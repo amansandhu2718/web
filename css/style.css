@@ -128,7 +128,7 @@ justify-content: center;}
       
        width: 100%;
    }
-#myBtn{
+.myBtn{
     scroll-behavior: smooth;
     float: right;
     clear: both;
