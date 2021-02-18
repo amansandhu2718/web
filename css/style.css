@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none !important;
 }
 body{
     overflow-X: hidden;
@@ -52,7 +58,7 @@ form .searchbar:focus{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+  min-height: 40vh;
     margin-top: 10px;
     width: 100%;
     background-color: #F6F6F6;
@@ -71,7 +77,8 @@ form .searchbar:focus{
     position: relative;
     height:auto;
     width: 100%;
-    bottom: 0px;}
+    bottom: 0px;
+}
 .section111{
 width: 80%;
 
@@ -90,20 +97,34 @@ justify-content: center;}
     justify-content: center;
     align-items: center;
 }
+.section11button{
+    transition: 0.3s;
+    width: 200px;
+    height: 45px;
+    background-color: #81BC40;
+    border-radius: 28px;
+    background: #81BC40;
+    border: 2px solid #81BC40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-decoration: none;
+ color: white;
+}
 .section11 {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.section11 a {
- text-decoration: none;
- color: white;
+.section23{
+ 
     }
 .section2{
     position: relative;
     height:auto;
-    width: 30%;
+    width: 50%;
     bottom: 0px;}
 .section12button{
     transition: 0.3s;
@@ -124,17 +145,19 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 40vh;
+  
     margin-top: 10px;
     width: 100%;
   
     overflow: hidden;}
 
 .section3{
-    position: relative;
+    
     height:auto;
-    width: 55%;
-    bottom: 20px;}
+    width: 60%;
+   
+  }
+   
   /* footer*/
    .footer{
        background-color: #101214;
@@ -182,7 +205,7 @@ align-items: center;
 }
 .options{
     width: 99%;
-    background-color: #f1f1f1;
+    background-color: #f1f1f180;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -193,6 +216,7 @@ justify-content: center;
     text-decoration: none;
     border-radius: 5px;
     padding: 10px;
+    
 }
 .options li a{
     color: black;
@@ -228,7 +252,7 @@ justify-content: center;
 .mainbuttons{
     width: 200px;
     height: 42px;
-    background-color: #DDDDDD;
+    background-color: #ffe880;
     border-radius: 28px;
   margin: 5px;
    
@@ -265,9 +289,17 @@ margin-right: 5px;
 }
 .topproductsarea{
     width: 100%;
-    height: 5vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
     background-color: gray;
     margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    
 }
 
 .productsarea{
@@ -278,51 +310,72 @@ margin-right: 5px;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(248, 247, 247);
 }
 .mycard{
-    width: 300px;
-    min-width: 200px;
-    height: 350px;
+    width: 400px;
+    
+    
     background-color: white;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 10px;
     
-    border-radius: 25px;
-    overflow: hidden;
+   margin-bottom: 20px;
+    border-bottom:5px solid #81BC40;
     padding: 0px;
 }
+.mycard:hover{
+   box-shadow: 0px 0px 10px #10121423;
+}
 .cardinner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    line-height:5px;
+  
+    line-height:15px;
     transition: all 0.4s;
+    background-color: rgb(248, 247, 247);
 }
-.cardinner:hover img{
-transform: scale(1.8);
-transition: all 0.4s;
-}
-.cardinner:hover button{
-    background-color: #FFB813;
-    transition: all 0.4s;
-    }
+
 .productimg{
- width: 100%;
-    height: auto ;  
+ 
+    
+    
+  width: 100%;
     margin-bottom: 10px;  
   
     
 }
+.options3{
+    width: 42px;
+    height: 42px;
+   padding: 20px;
+}
+.pdescription{
+    padding-left: 45px;
+    padding-right: 45px;
+    text-justify:inter-word ;
+}
+.topp{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .price{
-    margin-top:10px ;
+    margin: auto;
+    margin-top:5px ;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.producttt{
+    text-decoration: none;
+    color: black;
+}
+.producttt:hover{
+    color: black;
 }
 .buy{
     width: 100%;
@@ -333,8 +386,92 @@ transition: all 0.4s;
     bottom: 0px;
     transition: all 0.4s;
 }
-
+/*dropdown*/
+.mydropdown {
+    position: relative;
+    display: inline-block;
+   
+    
+  }
+  
+  .mydropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .mydropdown:hover .mydropdown-content {
+    display: block;
+  }
+  iframe{
+      width: 80%;
+      height: 40vh;
+      transform: translateX(12%);
+  }
+/*dropdown end*/
+/*learning*/
+#list-examplee{
+    
+    width: auto;
+    margin-top: 30px;
+   
+   
+}
+.scrollspy-examplee p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+#list-item-1{
+margin: auto;
+width: 320px;
+}
+/*learning end*/
 /* mainpage end*/
+/* footer fixx*/
+.footerfixx{
+position: fixed; bottom: 0; width: 100%;
+}
+/* footer fix end*/
+
+/* product details*/
+
+.sellerdetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.productimgg{
+    width: 60%;
+    height: auto;
+
+}
+
+
+.buttonss{
+   height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+}
+.buycart{
+    
+    width: 150px;
+    height: 45px;
+    background-color: #ffb813;
+    border-radius: 28px;
+    background: #ffb813;
+    border: 2px solid #ffb813;
+    margin: 0px;
+    
+  }
 @media screen and ( max-width: 1600px){
     .searchheading{
         font-size: 2.5vw;
@@ -347,7 +484,15 @@ transition: all 0.4s;
     .searchbutton{
         width: 6vw;
         height: 40px;}
-    
+        .footerfixx{
+            position: static; bottom: 0; width: 100%;
+            }
+            .container1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              min-height: 35vh;}
+           
 }
 @media screen and ( max-width: 1200px){
     .searchheading{
@@ -367,7 +512,30 @@ transition: all 0.4s;
             height: 38px;
            
         }
-        
+        .mycard{
+            width: 300px;
+            
+            
+           
+        }
+        .overr{
+             overflow-x: hidden;
+             overflow-y: hidden;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          min-height: 30vh;}
+          iframe{
+            width: 80%;
+            height: 40vh;
+            transform: translateX(10%);
+        }
+      
     }
 @media screen and ( max-width: 1024px){
     .searchheading{
@@ -381,6 +549,38 @@ transition: all 0.4s;
     .searchbutton{
         width: 10vw;
         height: 40px;}
+        #list-examplee{
+            position: static;
+            width: auto;
+           
+        }
+        .buycart{
+    
+            width: 150px;
+            height: 42px;
+            background-color: #ffb813;
+            border-radius: 28px;
+            background: #ffb813;
+            border: 2px solid #ffb813;
+            margin-top: 20px;
+            
+            
+          }
+          .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          min-height: 25vh;}
+          .section2{
+              width: 60%;
+          }
+          iframe{
+            width: 100%;
+            height: 40vh;
+            transform: translateX(0%);
+        }
+      
+        
 }       
 @media screen and ( max-width: 768px){
     .searchheading{
@@ -411,7 +611,28 @@ transition: all 0.4s;
         top: 10px;
     }
     
-        
+    .footerfixx{
+        position: static; 
+        }
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          min-height: 40vh;}
+          .section2{
+            width: 60%;
+        }
+        #list-examplee{
+         
+            overflow: hidden;
+            position: fixed;
+            left: 10px;
+            top:50px;
+            z-index: 200;
+            border-radius: 25px;
+        }
+       
+    
 }
 @media screen and ( max-width: 687px){
     .searchheading{
@@ -428,6 +649,11 @@ transition: all 0.4s;
     .searchbutton{
         width: 15vw;
         height: 35px;}
+        .mycard{
+            width: 260px;
+            
+           
+        }
 }
 @media screen and (max-width : 540px){
     .searchheading{
@@ -446,6 +672,11 @@ transition: all 0.4s;
     .searchbutton{
         width: 15vw;
         height: 35px;}
+        .mycard{
+            width: 200px;
+            
+           
+        }
 }
 @media screen and ( max-width: 450px){
     .searchheading{
@@ -474,6 +705,15 @@ transition: all 0.4s;
     .searchbar input::placeholder{
   padding: 5px;
         text-indent: 5px;}
+        .mycard{
+            width: 250px;
+            
+           
+        }
+        .topproductsarea{
+            font-size: 12px;
+        }
+        
 }
 @media screen and ( max-width: 378px){
     
@@ -486,7 +726,7 @@ transition: all 0.4s;
         margin-right: 5px;
         margin-top: 10px;
         
-        border-radius: 25px;
+      
         overflow: hidden;
         padding: 0px;
     }
@@ -499,8 +739,41 @@ transition: all 0.4s;
     margin-bottom: 5px;
     margin-right: 3px;
     }
-    
+    #list-item-1{
+        width: 200px;
+    }
+    #list-examplee{
+        
+        width: auto;
+        margin-top: 10px;
+       
+    }
 }
 
 @media screen and ( max-width: 321px){
+    p{
+        font-size: 12px;
+    }
+    .logoutbutton{
+        width: 80px;
+        height: 30px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    }
+    .mycard{
+        width: 200px;
+        min-width: 200px;
+        height: auto;
+        background-color: white;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 10px;
+        
+      
+        overflow: hidden;
+        padding: 0px;
+    }
+    footer{
+        width: 100%;
+    }
 }
